@@ -24,7 +24,7 @@ body {
 }
 
 .disabled {
-  display: none;
+  display: none !important;
 }
 
 .header {
@@ -90,9 +90,11 @@ body {
 }
 .slider .slide-news h2 {
   width: 100%;
+  padding: 1em 1.3em 0;
 }
 .slider .slide-news p {
   width: 100%;
+  padding: 0 2em;
 }
 
 .main {
@@ -189,19 +191,10 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  height: 100px;
   text-align: center;
-  padding: 3em;
+  padding: 0 3em;
   margin: auto;
   flex-wrap: wrap;
-}
-.fixtures .upcoming-fixtures:before {
-  display: block;
-  content: "";
-  height: 1px;
-  background: linear-gradient(30deg, #971b14, #000);
-  width: 80%;
-  margin: 2em auto;
 }
 .fixtures .upcoming-fixtures h3 {
   width: 100%;
