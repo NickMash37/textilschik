@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/owl.carousel.min.css">
-    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>ВК "Текстильщик" Иваново</title>
@@ -13,7 +13,7 @@
     <!-- Header start -->
 
     <header class="wrapper header">
-        <a href=""><img src="img/Logo.svg" alt=""></a>
+        <a href=""><img src="img/Logo.png" alt=""></a>
         <ul class="header-menu">
             <a href="index.html"><li class="header-menu__item">Главная</li></a>
             <a href=""><li class="header-menu__item">Команда</li></a>
@@ -27,20 +27,44 @@
     </header>
 
     <main class="wrapper main">
-        <div class="main-slider owl-carousel" id="slider">
-            <div class="slider">
-                <div class="slide">
-                    <span>Slide 1</span>
+        <div class="slider single-item">
+            <div class="slide">
+                <div class="slide-news">
+                    <img src="img/articles/article1.jpg" alt="">
+                    <h2>Турнир имени Г.П.Старченко</h2>
+                    <p>В минувшие выходные "Текстильщик" принял участие в турнире имени прославленного тренера Г.П.Старченко</p>
                 </div>
-                <div class="slide">
-                    <span>Slide 2</span>
+            </div>
+            <div class="slide">
+                <div class="slide-news">
+                    <img src="img/articles/article2.jpg" alt="">
+                    <h2>Турнир имени Г.П.Старченко</h2>
+                    <p>В минувшие выходные "Текстильщик" принял участие в турнире имени прославленного тренера Г.П.Старченко</p>
                 </div>
-                <div class="slide">
-                    <span>Slide 3</span>
+            </div>
+            <div class="slide">
+                <div class="slide-news">
+                    <img src="img/articles/article3.jpg" alt="">
+                    <h2>Турнир имени Г.П.Старченко</h2>
+                    <p>В минувшие выходные "Текстильщик" принял участие в турнире имени прославленного тренера Г.П.Старченко</p>
                 </div>
-                <div class="slide">
-                    <span>Slide 4</span>
-                </div>
+            </div>
+        </div>
+
+        <div class="fixtures">
+            <div class="previous-fixture">
+                <h2>Предыдущий матч. 02.03.23</h2>
+                <img src="img/team-logos/100x100/textil.png" alt="">
+                <span>3</span>
+                <span>-</span>
+                <span>1</span>
+                <img src="img/team-logos/dagestan.png" alt="">
+            </div>
+            <div class="next-fixtures">
+                <h2>Следующий матч</h2>
+                <img src="img/team-logos/100x100/textil.png" alt="">
+                <span>06.10.23</span>
+                <img src="img/team-logos/dagestan.png" alt="">
             </div>
         </div>
     </main>
@@ -48,7 +72,7 @@
 
 
     <script src="jquery-3.7.0.min.js"></script>
-    <script src="owl.carousel.min.js"></script>
-    <script src="slider.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
