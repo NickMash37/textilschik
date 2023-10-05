@@ -23,6 +23,10 @@ body {
   background-color: #971b14;
 }
 
+.disabled {
+  display: none;
+}
+
 .header {
   padding: 1em;
   display: flex;
@@ -42,12 +46,14 @@ body {
   list-style-type: none;
   font-size: 1.5em;
   padding: 0.3em 0.6em;
+  transition: background-color 0.2s ease-in;
+  transition: color 0.2s ease-out;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .header-menu__item:hover {
   background-color: #971b14;
   color: #fff;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 .header-socials {
   display: flex;
@@ -96,73 +102,143 @@ body {
 }
 
 .fixtures {
-  margin: 3em auto;
   display: flex;
-  flex-direction: row;
-  gap: 10%;
-  padding: 5em;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
+  margin: 3em auto;
+}
+.fixtures:before {
+  display: block;
+  content: "";
+  height: 1px;
+  background: linear-gradient(30deg, #971b14, #000);
+  width: 80%;
+  margin: 2em auto;
+}
+.fixtures-tabs {
+  display: flex;
+  gap: 20%;
+  margin: 1.5em auto;
+}
+.fixtures-tabs button {
+  background: #fff;
+  border: 1px solid #000;
+  outline: none;
+  cursor: pointer;
+  padding: 0.3em 2em;
+  transition: background-color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+.fixtures-tabs button:hover {
+  background-color: #971b14;
+  color: #fff;
+}
+.fixtures-tabs button:active {
+  background-color: #971b14;
+  color: #fff;
 }
 .fixtures .previous-fixture {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 0 3em;
+  margin: auto;
   flex-wrap: wrap;
-  width: 50%;
-  gap: 10px;
 }
-.fixtures .previous-fixture h2 {
+.fixtures .previous-fixture h3 {
   width: 100%;
   text-transform: uppercase;
-  margin: 2em auto;
-  text-align: center;
-  margin: 20px auto;
-  padding: 0.3em 0.6em;
-  background-color: #971b14;
-  color: #fff;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
-.fixtures .previous-fixture img {
-  width: 100px;
-  align-self: center;
+.fixtures .previous-fixture .first-team {
+  display: flex;
+  width: 33%;
+  flex-direction: row;
   margin: 0 auto;
+  justify-content: center;
+  gap: 40px;
+  font-size: 2em;
+  font-weight: 700;
 }
-.fixtures .previous-fixture span {
-  align-self: center;
-  font-size: 1.5em;
-  cursor: default;
+.fixtures .previous-fixture .score {
+  display: flex;
+  width: 33%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 40px;
+  font-size: 3em;
 }
-.fixtures .next-fixtures {
+.fixtures .previous-fixture .second-team {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 50%;
-  gap: 10px;
+  width: 33%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 40px;
+  font-size: 2em;
+  font-weight: 700;
 }
-.fixtures .next-fixtures h2 {
+.fixtures .previous-fixture p {
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.fixtures .upcoming-fixtures {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  padding: 3em;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.fixtures .upcoming-fixtures:before {
+  display: block;
+  content: "";
+  height: 1px;
+  background: linear-gradient(30deg, #971b14, #000);
+  width: 80%;
+  margin: 2em auto;
+}
+.fixtures .upcoming-fixtures h3 {
   width: 100%;
   text-transform: uppercase;
-  margin: 2em auto;
-  text-align: center;
-  margin: 20px auto;
-  padding: 0.3em 0.6em;
-  background-color: #971b14;
-  color: #fff;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
-.fixtures .next-fixtures img {
-  width: 100px;
-  align-self: center;
+.fixtures .upcoming-fixtures .first-team {
+  display: flex;
+  width: 33%;
+  flex-direction: row;
   margin: 0 auto;
+  justify-content: center;
+  gap: 40px;
+  font-size: 2em;
+  font-weight: 700;
 }
-.fixtures .next-fixtures span {
-  align-self: center;
-  font-size: 1.5em;
-  cursor: default;
+.fixtures .upcoming-fixtures .score {
+  display: flex;
+  width: 33%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 40px;
+  font-size: 3em;
+}
+.fixtures .upcoming-fixtures .second-team {
+  display: flex;
+  flex-direction: row;
+  width: 33%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 40px;
+  font-size: 2em;
+  font-weight: 700;
+}
+.fixtures .upcoming-fixtures p {
+  align-items: center;
+  display: flex;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

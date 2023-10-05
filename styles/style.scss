@@ -26,6 +26,10 @@ body {
     background-color: #971b14;
 }
 
+.disabled {
+    display: none;
+}
+
 // Header styles
 
 .header {
@@ -48,12 +52,14 @@ body {
             list-style-type: none;
             font-size: 1.5em;
             padding: 0.3em 0.6em;
+            transition: background-color .2s ease-in;
+            transition: color .2s ease-out;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
 
             &:hover {
                 background-color: #971b14;
                 color: #fff;
-                border-top-right-radius: 10px;
-                border-bottom-left-radius: 10px;
             }
         }
     }
@@ -124,79 +130,160 @@ body {
 // Fixtures block
 
 .fixtures {
-    margin: 3em auto;
     display: flex;
-    flex-direction: row;
-    gap: 10%;
-    padding: 5em;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
+    margin: 3em auto;
+
+    &:before {
+        display: block;
+        content: '';
+        height: 1px;
+        background: linear-gradient(30deg, #971b14, #000);
+        width: 80%;
+        margin: 2em auto;
+    }
+
+    &-tabs {
+        display: flex;
+        gap: 20%;
+        margin: 1.5em auto;
+
+        button {
+            background: #fff;
+            border: 1px solid #000;
+            outline: none;
+            cursor: pointer;
+            padding: 0.3em 2em;
+            transition: background-color .2s ease-in;
+            transition: color .2s ease-in;
+
+            &:hover {
+                background-color: #971b14;
+                color: #fff;
+            }
+
+            &:active {
+                background-color: #971b14;
+                color: #fff;
+            }
+        }
+    }
 
     .previous-fixture {
         display: flex;
-        flex-direction: row;
         align-items: center;
+        width: 100%;
+        text-align: center;
+        padding: 0 3em;
+        margin: auto;
         flex-wrap: wrap;
-        width: 50%;
-        gap: 10px;
 
-        h2 {
+        h3 {
             width: 100%;
             text-transform: uppercase;
-            margin: 2em auto;
-            text-align: center;
-            margin: 20px auto;
-            padding: 0.3em 0.6em;
-            background-color: #971b14;
-            color: #fff;
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 10px;
         }
 
-        img {
-            width: 100px;
-            align-self: center;
+        .first-team {
+            display: flex;
+            width: 33%;
+            flex-direction: row;
             margin: 0 auto;
+            justify-content: center;
+            gap: 40px;
+            font-size: 2em;
+            font-weight: 700;
+        }
+    
+        .score {
+            display: flex;
+            width: 33%;
+            margin: 0 auto;
+            justify-content: center;
+            gap: 40px;
+            font-size: 3em;
+        }
+    
+        .second-team {
+            display: flex;
+            flex-direction: row;
+            width: 33%;
+            margin: 0 auto;
+            justify-content: center;
+            gap: 40px;
+            font-size: 2em;
+            font-weight: 700;
         }
 
-        span {
-            align-self: center;
-            font-size: 1.5em;
-            cursor: default;
+        p {
+            align-items: center;
+            display: flex;
+            text-align: center;
         }
     }
 
-    .next-fixtures {
+    .upcoming-fixtures {
+        width: 100%;
         display: flex;
-        flex-direction: row;
         align-items: center;
+        height: 100px;
+        text-align: center;
+        padding: 3em;
+        margin: auto;
         flex-wrap: wrap;
-        width: 50%;
-        gap: 10px;
 
-        h2 {
+        &:before {
+            display: block;
+            content: '';
+            height: 1px;
+            background: linear-gradient(30deg, #971b14, #000);
+            width: 80%;
+            margin: 2em auto;
+        }
+
+        h3 {
             width: 100%;
             text-transform: uppercase;
-            margin: 2em auto;
-            text-align: center;
-            margin: 20px auto;
-            padding: 0.3em 0.6em;
-            background-color: #971b14;
-            color: #fff;
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 10px;
         }
 
-        img {
-            width: 100px;
-            align-self: center;
+        .first-team {
+            display: flex;
+            width: 33%;
+            flex-direction: row;
             margin: 0 auto;
+            justify-content: center;
+            gap: 40px;
+            font-size: 2em;
+            font-weight: 700;
+        }
+    
+        .score {
+            display: flex;
+            width: 33%;
+            margin: 0 auto;
+            justify-content: center;
+            gap: 40px;
+            font-size: 3em;
+        }
+    
+        .second-team {
+            display: flex;
+            flex-direction: row;
+            width: 33%;
+            margin: 0 auto;
+            justify-content: center;
+            gap: 40px;
+            font-size: 2em;
+            font-weight: 700;
         }
 
-        span {
-            align-self: center;
-            font-size: 1.5em;
-            cursor: default;
+        p {
+            align-items: center;
+            display: flex;
+            text-align: center;
         }
     }
+
 }
