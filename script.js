@@ -1,3 +1,5 @@
+// jQuery slider script
+
 $(".single-item").slick({
     dots: true,
     infinite: true,

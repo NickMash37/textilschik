@@ -234,4 +234,51 @@ body {
   text-align: center;
 }
 
+.socials {
+  width: 100%;
+  margin: 4em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  text-align: center;
+}
+.socials h3 {
+  font-size: 1.5em;
+}
+.socials-links {
+  display: flex;
+  gap: 3em;
+}
+.socials-links img {
+  width: 50px;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2em auto;
+  text-align: center;
+}
+.partners h3 {
+  font-size: 1.5em;
+}
+.partners-logo {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 0;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.partners-logo img {
+  width: 150px;
+  height: 100px;
+}
+.partners-logo span {
+  width: 100%;
+  margin-left: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
