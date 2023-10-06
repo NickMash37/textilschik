@@ -281,4 +281,11 @@ body {
   margin-left: 20px;
 }
 
+.footer {
+  width: 100%;
+  display: flex;
+  background: #000;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
