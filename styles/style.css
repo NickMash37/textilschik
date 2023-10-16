@@ -173,7 +173,6 @@ body {
   color: #000;
 }
 .fixtures-tabs button:hover {
-  background-color: #fff;
   color: #971b14;
 }
 .fixtures-tabs button:active, .fixtures-tabs button:focus {
