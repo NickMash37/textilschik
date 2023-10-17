@@ -292,6 +292,20 @@ body {
   width: 50px;
 }
 
+.table {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2em auto;
+}
+.table-photo {
+  width: 50%;
+}
+.table-img {
+  width: 45%;
+}
+
 .footer {
   width: 100%;
   padding: 1em 4em;
@@ -342,6 +356,10 @@ body {
 }
 .footer-contacts__contact p {
   color: #000;
+}
+.footer-contacts__contact p a:hover {
+  color: #971b14;
+  transition: 0.2s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
